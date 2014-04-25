@@ -5,9 +5,10 @@ from PyQt4.phonon import Phonon
 
 app = QtCore.QCoreApplication(sys.argv)
 app.setApplicationName("my_player")
+audioOutput = Phonon.AudioOutput(Phonon.MusicCategory, app)
 
 volume = 0.5
-#~ audioOutput.setVolume(volume)
+audioOutput.setVolume(volume)
 
 index = 0
 playlist = []
@@ -19,7 +20,6 @@ for file in os.listdir(path):
 
 player = Phonon.createPlayer(Phonon.MusicCategory, playlist[index])
 
-audioOutput = Phonon.AudioOutput(Phonon.MusicCategory, player)
 #~ Phonon.createPath(audioOutput, player)
 print "Odtwarzam plik: " + str(playlist[index])
 player.play()
@@ -40,5 +40,7 @@ while True:
 		volume = volume + 0.1
 		audioOutput.setVolume(volume)
 		audioOutput.setMuted()
+	elif s==6:
+		player.seek(player.currentTime() + 4000)
 		
 app.exec_()

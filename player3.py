@@ -1,44 +1,45 @@
 import sys
-import os
-from PyQt4 import QtCore
+ 
+from PyQt4.QtGui import QApplication, QMainWindow, QDirModel, QColumnView
+from PyQt4.QtGui import QFrame
+from PyQt4.QtCore import SIGNAL
 from PyQt4.phonon import Phonon
-
-app = QtCore.QCoreApplication(sys.argv)
-app.setApplicationName("my_player")
-
-volume = 0.5
-#~ audioOutput.setVolume(volume)
-
-index = 0
-playlist = []
-path = "/home/marek/Muzyka"
-for file in os.listdir(path):
-	if file.endswith(".mp3"):
-		playlist.append(Phonon.MediaSource(path+'/'+str(file)))
-		print "Dodano plik: " + path+'/'+str(file)
-
-player = Phonon.createPlayer(Phonon.MusicCategory, playlist[index])
-
-audioOutput = Phonon.AudioOutput(Phonon.MusicCategory, player)
-#~ Phonon.createPath(audioOutput, player)
-print "Odtwarzam plik: " + str(playlist[index])
-player.play()
-
-while True:
-	s=input("ttttt")
-	if s==1:
-		player.pause()
-	elif s==2:
-		player.play()
-	elif s==3:
-		player.stop()
-	elif s==4:
-		index = (index + 1) % len(playlist)
-		player = Phonon.createPlayer(Phonon.MusicCategory, playlist[index])
-		player.play()
-	elif s==5:
-		volume = volume + 0.1
-		audioOutput.setVolume(volume)
-		audioOutput.setMuted()
-		
-app.exec_()
+ 
+class MainWindow(QMainWindow):
+ 
+    m_model = QDirModel()
+ 
+    def __init__(self):
+        QMainWindow.__init__(self)
+        self.m_fileView = QColumnView(self)
+        self.m_media = None
+ 
+        self.setCentralWidget(self.m_fileView)
+        self.m_fileView.setModel(self.m_model)
+        self.m_fileView.setFrameStyle(QFrame.NoFrame)
+ 
+        self.connect(self.m_fileView,
+            SIGNAL("updatePreviewWidget(const QModelIndex &)"), self.play)
+ 
+    def play(self, index):
+        self.delayedInit()
+        #self.m_media.setCurrentSource(self.m_model.filePath(index))
+        self.m_media.setCurrentSource(
+            Phonon.MediaSource(self.m_model.filePath(index)))
+        self.m_media.play()
+ 
+    def delayedInit(self):
+        if not self.m_media:
+            self.m_media = Phonon.MediaObject(self)
+            audioOutput = Phonon.AudioOutput(Phonon.MusicCategory, self)
+            Phonon.createPath(self.m_media, audioOutput)
+ 
+def main():
+    app = QApplication(sys.argv)
+    QApplication.setApplicationName("Phonon Tutorial 2 (Python)")
+    mw = MainWindow()
+    mw.show()
+    sys.exit(app.exec_())
+ 
+if __name__ == '__main__':
+    main()

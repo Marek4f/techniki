@@ -89,19 +89,4 @@ while True:
 		audioOutput.setMuted(True)
 	elif s==98:
 		audioOutput.setMuted(False)
-	elif s==433:
-		pl = playlist
-		current = mediaObject.currentSource()
-		print current.fileName()
-		if (current == pl[0]):
-			print "cant do"
-		else:
-			print pl[1].fileName()
-			while (pl[1] != current):
-				pl.removeFirst()
-			mediaObject.stop()
-			mediaObject.clearQueue()
-			mediaObject.setQueue(pl)
-			mediaObject.play()
-
 app.exec_()

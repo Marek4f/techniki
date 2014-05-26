@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
 import sip
-sip.setapi('QString', 2)
   
 import sys
   
@@ -123,7 +122,6 @@ class MainWindow(QtGui.QMainWindow):
 		fileName = str((self.sources[-1]).fileName())
   
 		fileNameItem = QtGui.QTableWidgetItem(fileName)
-		fileNameItem.setFlags(fileNameItem.flags() ^ QtCore.Qt.ItemIsEditable)
 		
 		currentRow = self.musicTable.rowCount()
 		self.musicTable.insertRow(currentRow)
@@ -209,7 +207,7 @@ class MainWindow(QtGui.QMainWindow):
 				QtGui.QSizePolicy.Maximum)
   
 		palette = QtGui.QPalette()
-		palette.setBrush(QtGui.QPalette.Light, QtCore.Qt.darkGray)
+		palette.setBrush(QtGui.QPalette.Light, QtCore.Qt.yellow)
   
 		self.timeLcd = QtGui.QLCDNumber()
 		self.timeLcd.setPalette(palette)
@@ -242,13 +240,8 @@ class MainWindow(QtGui.QMainWindow):
 		self.setCentralWidget(widget)
 		self.setWindowTitle("EGG Player")
 
-def main():
-	
-	return 0
-
 if __name__ == '__main__':
 	app = QtGui.QApplication(sys.argv)
-	app.setApplicationName("Music Player")
 	app.setQuitOnLastWindowClosed(True)
 	
 	window = MainWindow()

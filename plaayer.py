@@ -16,16 +16,18 @@ class MainWindow(QtGui.QMainWindow):
   
 		index = len(self.zrodla)
 		
-		print str(len(self.zrodla))
-		print str(len(self.zrodla))
-		
 		for string in pliki:
 			self.zrodla.append(Phonon.MediaSource(string))
-  
-		if self.zrodla:
-			self.metaInformationResolver.setCurrentSource(self.zrodla[index])
 		
 		print str(len(self.zrodla))
+		
+		wiersze = self.tabela.rowCount()
+		ile_zrodla = len(self.zrodla)
+		while (ile_zrodla > wiersze):
+			self.tabela.insertRow(wiersze)
+			fileNameItem = QtGui.QTableWidgetItem((self.zrodla[wiersze]).fileName())
+			self.tabela.setItem(wiersze,0,fileNameItem)
+			wiersze = wiersze + 1
 			
 		self.tabela.resizeColumnsToContents()
 			
@@ -64,36 +66,11 @@ class MainWindow(QtGui.QMainWindow):
 			self.media.stop()
   
 	def zmianazrodla(self, source):
-		#self.tabela.selectRow(self.zrodla.index(source))
 		self.zegar.display('00:00')
   
 	def metaStateChanged(self, aktywnosc, oldState):
 		if aktywnosc != Phonon.StoppedState and aktywnosc != Phonon.PausedState:
 			return
-  
-		#if self.metaInformationResolver.currentSource().type() == Phonon.MediaSource.Invalid:
-			#return
-
-		fileName = (self.zrodla[-1]).fileName()
-  
-		fileNameItem = QtGui.QTableWidgetItem(fileName)
-		
-		currentRow = self.tabela.rowCount()
-		self.tabela.insertRow(currentRow)
-		self.tabela.setItem(currentRow, 0, fileNameItem)
-  
-		#if not self.tabela.selectedItems():
-			#self.tabela.selectRow(0)
-			#self.media.setCurrentSource(self.metaInformationResolver.currentSource())
-			
-		#index = self.zrodla.index(self.metaInformationResolver.currentSource()) +1
-  
-		#if len(self.zrodla) > index:
-			#self.metaInformationResolver.setCurrentSource(self.zrodla[index])
-		#else:
-			#self.musicTable.resizeColumnsToContents()
-			#if self.musicTable.columnWidth(0) > 300:
-				#self.musicTable.setColumnWidth(0, 300)
   
 	def koniec(self):
 		index = self.zrodla.index(self.media.currentSource()) + 1
@@ -124,7 +101,6 @@ class MainWindow(QtGui.QMainWindow):
   
 		self.glosnosc = Phonon.VolumeSlider(self)
 		self.glosnosc.setAudioOutput(self.wyjsciedzw)
-		#self.glosnosc.setSizePolicy(QtGui.QSizePolicy.Maximum,QtGui.QSizePolicy.Maximum)
   
 		self.zegar = QtGui.QLCDNumber()
   
@@ -132,7 +108,6 @@ class MainWindow(QtGui.QMainWindow):
   
 		self.tabela = QtGui.QTableWidget(0, 1)
 		self.tabela.setHorizontalHeaderLabels(naglowek)
-		#self.tabela.setSelectionMode(QtGui.QAbstractItemView.SingleSelection)
 		self.tabela.setSelectionBehavior(QtGui.QAbstractItemView.SelectRows)
 		self.tabela.cellPressed.connect(self.klik)
   
@@ -142,11 +117,7 @@ class MainWindow(QtGui.QMainWindow):
   
 		styl = QtGui.QVBoxLayout()
 		styl.addWidget(przyciski)
-		#playbackLayout.addStretch()
 		styl.addWidget(self.glosnosc)
-  
-		#mainLayout = QtGui.QVBoxLayout()
-		#mainLayout.addLayout(interfejs1)
 
 		styl.addLayout(suwaklayout)
 		styl.addWidget(self.tabela)
@@ -162,13 +133,11 @@ class MainWindow(QtGui.QMainWindow):
   
 		self.wyjsciedzw = Phonon.AudioOutput(Phonon.MusicCategory, self)
 		self.media = Phonon.MediaObject(self)
-		self.metaInformationResolver = Phonon.MediaObject(self)
   
 		self.media.setTickInterval(1000)
   
 		self.media.tick.connect(self.czas)
 		self.media.stateChanged.connect(self.zmianastat)
-		self.metaInformationResolver.stateChanged.connect(self.metaStateChanged)
 		self.media.currentSourceChanged.connect(self.zmianazrodla)
 		self.media.aboutToFinish.connect(self.koniec)
   
@@ -184,7 +153,6 @@ class MainWindow(QtGui.QMainWindow):
 
 if __name__ == '__main__':
 	app = QtGui.QApplication(sys.argv)
-	#app.setQuitOnLastWindowClosed(True)
 	
 	okno = MainWindow()
 	okno.show()

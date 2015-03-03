@@ -49,7 +49,7 @@ oraz użyć kilku *web components* z biblioteki [Polymer](https://www.polymer-pr
 Do kodu *JavaScript* dopisać testy (co najmniej kilkanaście).
 Testy podłączyć do platformy [Travis](https://travis-ci.com/plans) (wybrać FREE plan).
 
-2\. Przygotować pokaz slajdów w [Reveal.js](http://lab.hakim.se/reveal-js/)
+*\. Przygotować pokaz slajdów w [Reveal.js](http://lab.hakim.se/reveal-js/)
 szczegółowo opisujący jak wdrożyć [przykładową aplikację Meteor](https://www.meteor.com/install)
 na zewnętrznym serwerze
 [Digital Ocean](http://devo.ps/blog/deploy-your-meteor-apps-on-digital-ocean-in-5-minutes/)

@@ -85,6 +85,6 @@ meteor create --list
 
 
 ###*Różne rzeczy:*
-1\. [GitHub Flavored Markdown](http://guides.github.com/overviews/mastering-markdown/) ,
+1\ [GitHub Flavored Markdown](http://guides.github.com/overviews/mastering-markdown/) ,
   [Mastering Markdown](http://guides.github.com/overviews/mastering-markdown/)
 2\. [Mapping geoJSON files on GitHub](https://help.github.com/articles/mapping-geojson-files-on-github)

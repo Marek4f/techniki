@@ -49,7 +49,7 @@ oraz użyć kilku *web components* z biblioteki [Polymer](https://www.polymer-pr
 Do kodu *JavaScript* dopisać testy (co najmniej kilkanaście).
 Testy podłączyć do platformy [Travis](https://travis-ci.com/plans) (wybrać FREE plan).
 
-*\. Przygotować pokaz slajdów w [Reveal.js](http://lab.hakim.se/reveal-js/)
+2\. Przygotować pokaz slajdów w [Reveal.js](http://lab.hakim.se/reveal-js/)
 szczegółowo opisujący jak wdrożyć [przykładową aplikację Meteor](https://www.meteor.com/install)
 na zewnętrznym serwerze
 [Digital Ocean](http://devo.ps/blog/deploy-your-meteor-apps-on-digital-ocean-in-5-minutes/)
@@ -66,11 +66,11 @@ meteor create --list
 [JavaScript in 2015](http://glenmaddern.com/articles/javascript-in-2015)
 ([YouTube](https://www.youtube.com/watch?v=iukBMY4apvI)):
 
-- Nicholas C. Zakas.
+* Nicholas C. Zakas.
   [Understanding ECMAScript 6](https://leanpub.com/understandinges6/read/)
-- [ES.next showcase](https://github.com/sindresorhus/esnext-showcase)
+* [ES.next showcase](https://github.com/sindresorhus/esnext-showcase)
   - [JavaScript Promises ... In Wicked Detail](http://mattgreer.org/articles/promises-in-wicked-detail/)
-- [Web Components](http://w3c.github.io/webcomponents/explainer/):
+* [Web Components](http://w3c.github.io/webcomponents/explainer/):
   * Addy Osmani.
   [The Web’s Declarative, Composable Future](http://addyosmani.com/blog/the-webs-declarative-composable-future/)
 
@@ -88,8 +88,8 @@ meteor create --list
   ([polskie tłumaczenie](http://pl.discovermeteor.com/))
 
 
-### Różne rzeczy
+###Różne rzeczy:
 
-* [GitHub Flavored Markdown](http://guides.github.com/overviews/mastering-markdown/) ,
+1.\ [GitHub Flavored Markdown](http://guides.github.com/overviews/mastering-markdown/) ,
   [Mastering Markdown](http://guides.github.com/overviews/mastering-markdown/)
-* [Mapping geoJSON files on GitHub](https://help.github.com/articles/mapping-geojson-files-on-github)
+2.\ [Mapping geoJSON files on GitHub](https://help.github.com/articles/mapping-geojson-files-on-github)

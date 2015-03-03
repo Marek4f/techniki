@@ -1,7 +1,6 @@
 # Techniki Internetowe, 14/15
 
-> *Uważaj na człowieka, którego nie interesują szczegóły.*
-> — William Feather
+> *Uważaj na człowieka, którego nie interesują szczegóły.*<br>— William Feather
 
 ##*Terminy rozliczenia się z projektów:*
 

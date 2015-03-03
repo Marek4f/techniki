@@ -5,9 +5,9 @@
 
 ##*Terminy rozliczenia się z projektów:*
 
-* **zaliczenie**: 2015-03-24
+* **zaliczenie**: 2015-03-24<br>
   nierozliczenie się z projektu w terminie powoduje obniżenie oceny
-* **egzamin**: 2015-05-12
+* **egzamin**: 2015-05-12<br>
   nierozliczenie się z projektu w terminie oznacza ocenę ndst
   z egzaminu; na egzamin poprawkowy zostaną wyznaczone nowe projekty
 

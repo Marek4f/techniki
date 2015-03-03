@@ -3,11 +3,11 @@
 > *Uważaj na człowieka, którego nie interesują szczegóły.*
 > — William Feather
 
-##Terminy rozliczenia się z projektów:*
+##*Terminy rozliczenia się z projektów:*
 
-* ***zaliczenie***: 2015-03-24
+* **zaliczenie**: 2015-03-24
   nierozliczenie się z projektu w terminie powoduje obniżenie oceny
-* ***egzamin***: **ISODate("2015-05-12T12:00:00.000Z")**<br>
+* **egzamin**: 2015-05-12
   nierozliczenie się z projektu w terminie oznacza ocenę ndst
   z egzaminu; na egzamin poprawkowy zostaną wyznaczone nowe projekty
 

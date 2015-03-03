@@ -44,15 +44,6 @@ z jednego z frameworków:
 Na stronach wstawić mapkę korzystającą [Leaflet](http://leafletjs.com/)
 oraz użyć kilku *web components* z biblioteki [Polymer](https://www.polymer-project.org).
 
-<!--
-Dane należy wpisać według formatu (wszystko w jednym wierszu):
-
-    1. [Nazwisko Imię](link do repozytorium z kodem).
-       [Nazwa aplikacji korzystającej z Leaflet](link do działającej aplikacji),
-       [Tytuł prezentacji](link do działających slajdów).
--->
-
-
 ### Egzamin
 
 1\. Przygotować prostą aplikację WWW korzystając z frameworka [Meteor](https://www.meteor.com/).
@@ -68,21 +59,10 @@ lub [Heroku](http://ondrej-kvasnovsky.blogspot.com/2013/05/how-to-deploy-meteor-
 Po instalacji frameworka [Meteor](https://www.meteor.com/install)
 listę przykładowych aplikacji wypisze to polecenie:
 ```console
-$ meteor create --list
+meteor create --list
 ```
 
-<!--
-Dane należy wpisać według formatu (wszystko w jednym wierszu):
-
-    1. [Nazwisko Imię](link do repozytorium z kodem).
-    [Nazwa aplikacji](link do wdrożonej i działającej aplikacji)
-
-U góry strony *README.md* w repozytorium z kodem dodać ikonkę Travisa [build|passing],
-tak jak to zrobiono na stronie [RSpec Intro](https://github.com/wbzyl/ruby-intro).
--->
-
-
-### 2015 → ∞
+### 2015 →
 
 [JavaScript in 2015](http://glenmaddern.com/articles/javascript-in-2015)
 ([YouTube](https://www.youtube.com/watch?v=iukBMY4apvI)):
@@ -95,22 +75,22 @@ tak jak to zrobiono na stronie [RSpec Intro](https://github.com/wbzyl/ruby-intro
   * Addy Osmani.
   [The Web’s Declarative, Composable Future](http://addyosmani.com/blog/the-webs-declarative-composable-future/)
 
-CSS in 2015:
+###CSS in 2015:
 
-- [Less](http://lesscss.org)
-- [Sass](http://sass-lang.com)
+* [Less](http://lesscss.org)
+* [Sass](http://sass-lang.com)
 
-Reszta:
+###Reszta:
 
-- [Pro Git Book](http://git-scm.com/book/en/v2)
-- [Docker](http://www.docker.com/) –  Build, Ship and Run Any App, Anywhere
-- [Meteor](https://www.meteor.com/):
+* [Pro Git Book](http://git-scm.com/book/en/v2)
+* [Docker](http://www.docker.com/) –  Build, Ship and Run Any App, Anywhere
+* [Meteor](https://www.meteor.com/):
   [Discover Meteor](http://book.discovermeteor.com/)
   ([polskie tłumaczenie](http://pl.discovermeteor.com/))
 
 
 ### Różne rzeczy
 
-- [GitHub Flavored Markdown](http://guides.github.com/overviews/mastering-markdown/) +
+* [GitHub Flavored Markdown](http://guides.github.com/overviews/mastering-markdown/) ,
   [Mastering Markdown](http://guides.github.com/overviews/mastering-markdown/)
-- [Mapping geoJSON files on GitHub](https://help.github.com/articles/mapping-geojson-files-on-github)
+* [Mapping geoJSON files on GitHub](https://help.github.com/articles/mapping-geojson-files-on-github)

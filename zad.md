@@ -14,9 +14,7 @@ Projekty tworzymy w repozytoriach Git na *GitHub* lub *Bitbucket*.
 Projekt na egzamin umieszczamy w repozytorium prywatnym.
 W repozytoriach nie powinno być śmieci, np. plików backup edytora.
 
-
 ### Zaliczenie
-
 1\. Zapoznajemy się z notacjami:
 
 * [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) –

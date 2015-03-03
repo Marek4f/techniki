@@ -14,7 +14,7 @@ Projekty tworzymy w repozytoriach Git na *GitHub* lub *Bitbucket*.
 Projekt na egzamin umieszczamy w repozytorium prywatnym.
 W repozytoriach nie powinno być śmieci, np. plików backup edytora.
 
-### Zaliczenie
+### *Zaliczenie:*
 1\. Zapoznajemy się z notacjami:
 
 * [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) –
@@ -22,7 +22,6 @@ W repozytoriach nie powinno być śmieci, np. plików backup edytora.
 * [reStructuredText Primer](http://sphinx-doc.org/rest.html)
 * [AsciiDoc](http://www.methods.co.nz/asciidoc/); zob. też
   [Pro Git Book, ed. 2](https://github.com/progit/progit2)
-
 Korzystając z jednej z tych notacji przygotować:
 
 * tabelkę porównującą te notacje; przepisać tę tabelkę w *czystym* HTML5
@@ -41,7 +40,7 @@ z jednego z frameworków:
 Na stronach wstawić mapkę korzystającą [Leaflet](http://leafletjs.com/)
 oraz użyć kilku *web components* z biblioteki [Polymer](https://www.polymer-project.org).
 
-### Egzamin
+### *Egzamin:*
 
 1\. Przygotować prostą aplikację WWW korzystając z frameworka [Meteor](https://www.meteor.com/).
 Do kodu *JavaScript* dopisać testy (co najmniej kilkanaście).
@@ -52,15 +51,14 @@ szczegółowo opisujący jak wdrożyć [przykładową aplikację Meteor](https:/
 na zewnętrznym serwerze
 [Digital Ocean](http://devo.ps/blog/deploy-your-meteor-apps-on-digital-ocean-in-5-minutes/)
 lub [Heroku](http://ondrej-kvasnovsky.blogspot.com/2013/05/how-to-deploy-meteor-on-heroku-with.html).
-
 Po instalacji frameworka [Meteor](https://www.meteor.com/install)
 listę przykładowych aplikacji wypisze to polecenie:
+
 ```console
 meteor create --list
 ```
 
-### 2015 →
-
+### *2015: →*
 [JavaScript in 2015](http://glenmaddern.com/articles/javascript-in-2015)
 ([YouTube](https://www.youtube.com/watch?v=iukBMY4apvI)):
 
@@ -72,12 +70,12 @@ meteor create --list
   * Addy Osmani.
   [The Web’s Declarative, Composable Future](http://addyosmani.com/blog/the-webs-declarative-composable-future/)
 
-###CSS in 2015:
+###*CSS in 2015:*
 
 * [Less](http://lesscss.org)
 * [Sass](http://sass-lang.com)
 
-###Reszta:
+###*Reszta:*
 
 * [Pro Git Book](http://git-scm.com/book/en/v2)
 * [Docker](http://www.docker.com/) –  Build, Ship and Run Any App, Anywhere
@@ -86,8 +84,7 @@ meteor create --list
   ([polskie tłumaczenie](http://pl.discovermeteor.com/))
 
 
-###Różne rzeczy:
-
+###*Różne rzeczy:*
 1\. [GitHub Flavored Markdown](http://guides.github.com/overviews/mastering-markdown/) ,
   [Mastering Markdown](http://guides.github.com/overviews/mastering-markdown/)
 2\. [Mapping geoJSON files on GitHub](https://help.github.com/articles/mapping-geojson-files-on-github)

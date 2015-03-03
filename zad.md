@@ -1,12 +1,11 @@
-## Techniki Internetowe, 14/15
+# Techniki Internetowe, 14/15
 
 > *Uważaj na człowieka, którego nie interesują szczegóły.*
->
 > — William Feather
 
-Terminy rozliczenia się z projektów:
+##Terminy rozliczenia się z projektów:*
 
-* ***zaliczenie***: **ISODate("2015-03-24T12:00:00.000Z")**<br>
+* ***zaliczenie***: 2015-03-24
   nierozliczenie się z projektu w terminie powoduje obniżenie oceny
 * ***egzamin***: **ISODate("2015-05-12T12:00:00.000Z")**<br>
   nierozliczenie się z projektu w terminie oznacza ocenę ndst

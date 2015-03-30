@@ -7,3 +7,4 @@
 |kopiowanie tekstu|jest|brak|
 |Wielkosc tabeli|mozna kontrolowac|brak kontroli|
 |linki|link:/index.html[slowo]|[slowo]brak spacja(link)|
+koniec

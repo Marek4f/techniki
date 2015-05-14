@@ -8,8 +8,6 @@
 |Wielkosc tabeli|mozna kontrolowac|brak kontroli|
 |linki|link:/index.html[slowo]|[slowo]brak spacja(link)|
 
-###Porównanie języków znaczników Markdown i AsciiDoc
-
 |FUNKCJA            | GHM (Markdown)                 | AsciiDoc                  |
 |:-----------------:|:------------------------------:|:-------------------------:|
 |Nagłówek Poziomu 4 | ####                           | +++++++                   |

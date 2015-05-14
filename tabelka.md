@@ -8,7 +8,7 @@
 |Wielkosc tabeli|mozna kontrolowac|brak kontroli|
 |linki|link:/index.html[slowo]|[slowo]brak spacja(link)|
 
-|FUNKCJA            | GHM (Markdown)                 | AsciiDoc                  |
+|funkcja            | Markdown                 | Ascii                 |
 |:-----------------:|:------------------------------:|:-------------------------:|
 |Nagłówek Poziomu 4 | ####                           | +++++++                   |
 |Nagłówek Poziomu 3 | ###                            | ^^^^^^^                   |
